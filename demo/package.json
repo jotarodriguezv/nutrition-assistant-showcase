@@ -1,0 +1,17 @@
+{
+  "name": "nutrition-agent-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal CLI that reproduces the core pattern of the WhatsApp nutrition assistant: strict structured output, code-side validation, pending-then-confirm entries, daily quota, in-memory log.",
+  "type": "module",
+  "scripts": {
+    "demo": "node --env-file-if-exists=.env src/cli.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "openai": "^4.104.0"
+  }
+}
